@@ -20,9 +20,15 @@ In this example, we will demonstrate how to set up Twingate client in Coder by m
    1. If status is `authenticating` you should follow the URL displayed to authenticate
    2. If status is `not running`, execute `twingate start` followed by `/usr/bin/twingate-notifier console` and follow the URL displayed to authenticate
 
-#### Connect using the Twingate service account
+#### Connect using a Twingate service account
 1. Generate a Twingate Service Account Key, for more details see [here](https://www.twingate.com/docs/services)
 2. Create a new Docker starter template, for more details see [here](https://coder.com/docs/v2/latest/templates/tutorial#2-choose-a-starter-template)
 3. Replace the content of the default `main.tf` with [docker_serviceaccount.tf](./templates/docker_serviceaccount.tf), for more details see [here](https://coder.com/docs/v2/latest/templates/tutorial#6-modify-your-template)
 4. Go to the Setting page of the template and set your Twingate Service Key Variable
 5. Create workspace and open the workspace terminal. run `twingate status` - it should return `online`
+
+### How it works and other templates
+To see how we modified the default Docker template and how this would work for other types of templates, e.g. Kubernetes, see [Other Template](docs/OTHER_TEMPLATE.md)
+
+### Known Limitations
+1. Twingate client requires `privileged` docker container
