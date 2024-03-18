@@ -6,7 +6,7 @@ This repository provides an example of how to access Twingate protected resource
 
 This repository provides an example of how to configure a [Twingate](https://www.twingate.com/) client running with either a [service account](https://www.twingate.com/docs/services) or as a regular user in Coder. Users will then be able to access resources such as internal databases or APIs that are Twingate protected directly from their Coder workspace.
 ## Getting started
-In this example, we will demonstrate how to set up Twingate by modifying the Coder Docker default templates.
+In this example, we will demonstrate how to set up Twingate client in Coder by modifying the Coder Docker default templates.
 
 ### Prerequisites
 1. [Twingate](https://www.twingate.com/) account
