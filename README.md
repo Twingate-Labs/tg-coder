@@ -32,3 +32,6 @@ To see how we modified the default Docker template and how this would work for o
 
 ### Known Limitations
 1. Twingate client requires `privileged` docker container
+
+### Issues
+If you are experiencing any issues, create a new issue [here](https://github.com/Twingate-Labs/tg-coder/issues/new).
